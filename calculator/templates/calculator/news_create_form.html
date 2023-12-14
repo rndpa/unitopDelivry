@@ -1,0 +1,28 @@
+{% extends 'calculator/base.html' %}
+
+{% block title %}
+  Create news
+{% endblock %}
+
+{% block body %}
+  {% if request.user.is_authenticated %}
+    <form action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      <div class="form-update mb-3">
+        <h5 class="form-update__title">Заголовок новости</h5>
+        {{ form.title }}
+      </div>
+      <div class="form mb-3">
+        <h5>Текст новости</h5>
+        {{ form.content }}
+      </div>
+      <div class="form-update__pics mb-3">
+        <h5 class="mb-1">Картинка</h5>
+        {{ form.image }}
+      </div>
+
+      <button type="submit" class="btn btn-success">Создать</button>
+    </form>
+  {% endif %}
+{% endblock %}

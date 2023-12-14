@@ -1,0 +1,219 @@
+@media (max-width: 1024px) {
+
+    .flex-calc span {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .work-list:nth-child(2) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .news-detail {
+        flex-direction: column;
+    }
+
+    .news-img > img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news-descr__detail2 {
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .work-list {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .work-list>li:not(:last-child) {
+        width: 270px;
+        margin-bottom: 30px;
+    }
+
+    .flex-calc {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-calc span {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .work-list>li:not(:last-child) {
+        width: 370px;
+        margin-bottom: 30px;
+    }
+
+    .work-list>li {
+        width: 370px;
+    }
+
+
+    .about-obj {
+        flex-direction: column;
+    }
+
+    .about-left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .offer-obj {
+        flex-direction: column-reverse;
+    }
+
+    .offer-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .offer-left {
+        width: 100%;
+    }
+
+    .news {
+        margin-bottom: 20px;
+    }
+
+    .news-list__itm {
+        flex-direction: column;
+    }
+
+    .news-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news-right {
+        width: 100%;
+    }
+
+    .news-right a h2 {
+        margin-left: 0;
+    }
+
+    .news-right p {
+        padding: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .nav-pills {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .flex-calc {
+        justify-content: space-evenly;
+    }
+
+    .form-calc {
+        text-align: center;    
+    }
+
+    #kg_trail {
+        width: 30%;
+    }
+
+    #m3_trail {
+        width: 30%;
+    }
+
+    #kg_auto {
+        width: 30%;
+    }
+
+    #m3_auto {
+        width: 30%;
+    }
+
+    #kg_express {
+        width: 30%;
+    }
+
+    #m3_express {
+        width: 30%;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .flex-calc {
+        flex-direction: column;
+    }
+
+    .flex-calc input:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    #kg_trail {
+        width: 100%;
+    }
+
+    #m3_trail {
+        width: 100%;
+    }
+
+    #kg_auto {
+        width: 100%;
+    }
+
+    #m3_auto {
+        width: 100%;
+    }
+
+    #kg_express {
+        width: 100%;
+    }
+
+    #m3_express {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.1rem;
+    }
+
+    .calculator-descr {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+}

@@ -1,0 +1,28 @@
+{% extends 'calculator/base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+<h2>Обновить новость</h2>
+
+<form action="" method="post">
+    {% csrf_token %}
+
+    <div class="form-update">
+        <h5 class="form-update__title">Заголовок новости</h5>
+        {{ form.title }}
+    </div>
+    <div class="form">
+        <h5>Текст новости</h5>
+        {{ form.content }}
+    </div>
+    <div class="form-update__pics">
+        <h5>Картинка</h5>
+        {{ form.image }}
+    </div>
+
+    <button type="submit" class="btn btn-success">Обновить</button>
+</form>
+{% endblock %}

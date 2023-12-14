@@ -1,0 +1,26 @@
+{% extends 'calculator/base.html' %}
+
+{% block title %}
+  Все авторские посты
+{% endblock %}
+
+{% block body %}
+  <h2 class="news-title custom-title">Все авторские новости</h2>
+  <div class="news-detail">
+    <ul class="news-list">
+      {% for i in news %}
+        <li class="news-list__itm">
+          <div class="news-left">
+            {% if i.image %}
+              <a href="{{ i.get_absolute_url }}"><img src="{{ i.image.url }}" alt=" {{ i.title }} " /></a>
+            {% endif %}
+          </div>
+          <div class="news-right">
+            <a href=" {{ i.get_absolute_url }} "><h2 class="news-name">{{ i.title }}</h2></a>
+            <p class="news-descr__detail">{{ i.content|truncatewords:80 }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

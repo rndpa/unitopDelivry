@@ -1,0 +1,27 @@
+{% extends 'calculator/base.html' %}
+
+{% block title %}
+  {{ news.title }}
+{% endblock %}
+
+{% block body %}
+  <h2 class="news-detail__title">{{ news.title }}</h2>
+  <div class="news-detail">
+    <div class="news-img">
+      {% if news.image %}
+        <img src=" {{ news.image.url }} " alt="" />
+      {% endif %}
+    </div>
+    <div>
+      <p class="news-descr__detail2">{{ news.content }}</p>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-success">
+      <a href=" {% url 'update_news' slug=object.slug %} " class="btn-link">Изменить новость</a>
+    </button>
+    <button class="btn btn-danger">
+      <a href=" {% url 'delete_news' slug=object.slug %} " class="btn-link">Удалить новость</a>
+    </button>
+  </div>
+{% endblock %}

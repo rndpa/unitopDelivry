@@ -1,0 +1,173 @@
+{% extends 'calculator/base.html' %}
+{% load static %}
+
+{% block title %}
+  UniTopDelivery - Доставка грузов из Китая в Москву
+{% endblock %}
+
+{% block body %}
+  <h1 class="title">Таможенная очистка грузов из Китая в республике Беларусь</h1>
+  <div class="main_pic">
+    <img src="{% static 'calculator/pics/main_pic.png' %}" alt="">
+  </div>
+
+  <section class="about" id="about">
+    <h2 class="about-title custom-title">О Нас</h2>
+    <div class="about-obj">
+      <div class="about-left">
+        <img src="{% static 'calculator/pics/trail.jpg' %}" alt="">
+      </div>
+      <div class="about-right">
+        <h5 class="about-descr">Мы работаем на 4х таможенных терминалах Республики Беларусь и 2х терминалах республики Казахстан</h5>
+        <ul class="about-list">
+          <li class="about-list__itm">Понятная логистика</li>
+          <li class="about-list__itm">Выгодное местоположение</li>
+          <li class="about-list__itm">Сертификация товаров</li>
+          <li class="about-list__itm">С нами сотрудничают Российские, Казахские и Китайские компании</li>
+        </ul>
+      </div>
+  </div>
+
+  </section>
+  <section class="offer">
+    <h2 class="offer-title custom-title">Что мы предлагаем</h2>
+    <div class="offer-obj">
+      <div class="offer-left">
+      <h5 class="offer-descr">Полный комплекс логистических, складских и таможенных услуг для товаров стран Таможенного Союза.</h5>
+      <p>С нами сотрудничают более 140 компаний и частных предпринимателей Москвы</p>
+      <ul class="offer-list">
+        <li class="offer-list__itm">Оптимизация логистических издержек</li>
+        <li class="offer-list__itm">Услуга «door to door»</li>
+        <li class="offer-list__itm">Перегрузка и перевалка в Минске и Москве</li>
+        <li class="offer-list__itm">Работа со всеми группами товаров</li>
+      </ul>
+      </div>
+      <div class="offer-right">
+        <img src="{% static 'calculator/pics/pic1.jpg' %}" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <h2 class="work-title custom-title">Работаем 7 дней в неделю без выходных и праздников.</h2>
+    <ul class="work-list">
+      <li>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+            <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">Индивидуальный и профессиональный подход к каждому клиенту</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
+            <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z"/>
+            <path d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z"/>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">Получение необходимых разрешительных документов</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">Надежные партнеры</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">Простые расчеты</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="calculator" id="calculator">
+    <h2 class="calculator-title custom-title">Калькуляторы рассчета стоимости</h2>
+    <h5 class="calculator-descr">
+      Для предварительного расчета стоимости доставки вашего груза из Китая в Москву, предлагаем вам калькулятор предварительной стоимости доставки с учетом транспортных расходов и таможенных платежей
+    </h5>
+    <div class="calculator-trail mb">
+      <form action="" class="flex-calc">
+          <span><b>Калькулятор расчета стоимости доставки <i>ЖД-транспортом</i></b></span>
+          <div class="flex-calc">
+            <input id="kg_trail" type="number" placeholder="кг" />
+            <input id="m3_trail" type="number" placeholder="м/куб" />
+            <input name="" id="buttonCalcTrail" class="btn btn-primary" type="button" value="Рассчитать" />
+          </div>
+        </form>
+        <div class="form-bottom">
+          <span id="trail_response"></span>
+          <span id="trail_warning"></span>
+        </div>
+    </div>
+    {% comment %} <div class="calculator-auto mb">
+      <form action="" class="flex-calc">
+          <span><b>Калькулятор расчета стоимости доставки <i>авто-транспортом</i></b></span>
+          <div class="flex-calc">
+            <input id="kg_auto" type="number" placeholder="кг" />
+            <input id="m3_auto" type="number" placeholder="м/куб" />
+            <input name="" id="buttonCalcAuto" class="btn btn-primary" type="button" value="Рассчитать" />
+          </div>
+        </form>
+        <div class="form-bottom">
+          <span id="auto_response"></span>
+          <span id="auto_warning"></span>
+      </div>
+    </div>
+    <div class="calculator-express mb">
+      <form action="" class="flex-calc">
+          <span><b>Калькулятор расчета стоимости доставки <i>экспресс</i></b></span>
+          <div class="flex-calc">
+            <input id="kg_express" type="number" placeholder="кг" />
+            <input id="m3_express" type="number" placeholder="м/куб" />
+            <input name="" id="buttonCalcExpress" class="btn btn-primary" type="button" value="Рассчитать" />
+          </div>
+        </form>
+        <div class="form-bottom">
+          <span id="express_response"></span>
+          <span id="express_warning"></span>
+        </div>
+    </div>
+    <h5 class="calculator-descr mb">Доставка товаров осуществляется железнодорожным и авто транспортом</h5> {% endcomment %}
+  </section>
+  <section class="news">
+    {% if news %}
+      <h2 class="news-title custom-title">Авторские новости</h2>
+      <div class="news-obj">
+        <ul class="news-list">
+          {% for i in news %}
+          <li class="news-list__itm">
+            <div class="news-left">
+              {% if i.image %}
+              <a href=" {{ i.get_absolute_url }} ">
+                <img src="{{ i.image.url }}" alt=" {{ i.title }} ">
+              </a>
+              {% endif %}
+            </div>
+            <div class="news-right">
+              <a href=" {{ i.get_absolute_url }} "><h2 class="news-name">{{ i.title }}</h2></a>
+              <p class="news-descr">
+                {{ i.content|truncatewords:50 }}
+              </p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}
